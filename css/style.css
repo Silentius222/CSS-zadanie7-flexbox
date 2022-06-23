@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+  }
+
+  header {
+    background: rgb(238, 61, 7);
+    height: 50%;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+  }
+
+  .left {
+    background: green;
+    color: white;
+    width: 15%;
+  }
+
+  .right {
+    background: pink;
+    color: white;
+    width: 15%;
+  }
+
+  article {
+    background: aqua;
+    color: white;
+  }
+
+  section {
+    display: flex;
+    width: 100%;
+  }
+
+  footer {
+    background-color: violet;
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+
+@media screen and (max-width: 992px) {
+    .left,
+    .right,
+    article {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left,
+    .right,
+    article {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left,
+    .right,
+    article {
+        width: 100%;
+    }
+}
