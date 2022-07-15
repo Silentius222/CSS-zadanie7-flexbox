@@ -16,23 +16,29 @@ body {
   .left {
     background: green;
     color: white;
-    width: 15%;
+    flex-grow: 1;
+    order: 0;
   }
 
   .right {
     background: pink;
     color: white;
-    width: 15%;
+    flex-grow: 1;
+    order: 2;
   }
 
   article {
     background: aqua;
     color: white;
+    flex-grow: 1;
+    order: 1;
   }
 
   section {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
   }
 
   footer {
@@ -46,7 +52,7 @@ body {
     .left,
     .right,
     article {
-        width: 49%;
+        width: 768px;
     }
 }
 
@@ -54,7 +60,7 @@ body {
     .left,
     .right,
     article {
-        width: 100%;
+        width: 95%;
     }
 }
 
@@ -62,6 +68,6 @@ body {
     .left,
     .right,
     article {
-        width: 100%;
+        width: 3em;
     }
 }
